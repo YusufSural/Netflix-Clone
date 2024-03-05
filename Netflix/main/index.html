@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Türkiye</title>
+    <link rel="icon" href="/resim/icon.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- NETFLIX LOGO -->
+    <div class="siyah-arkaplan">
+        <img id="karartma" src="/resim/bg.jpg" alt="Karartılmış Resim">
+    </div>
+
+    <!-- ÜST KISIM -->
+    <div class="top">
+        <span class="netflix">NETFLIX</span>  
+
+            <select id="language">
+                <option style="color: black;" value="tr">Türkçe</option>
+                <option style="color: black;" value="en">English</option>
+             </select>     
+
+             <a href="/main2/login.html"><button id="login" value=submit">Oturum Aç</button></a>
+    </div>
+
+    <!-- CONTENT-İÇERİK -->
+    <div class="content">
+        <h1 class="content-h1">Sınırsız film, dizi ve çok daha fazlası</h1>
+        <h4>İstediğiniz yerde izleyin. İstediğiniz zaman iptal edin.</h4>
+        <h5>İzlemeye hazır mısınız? Üye olmak ya da hesabınıza tekrar ulaşmak için tek yapmanız gereken e-posta adresinizi girmek.</h5>
+        <input type="text" id="kayit-input" placeholder="E-posta adresi">
+        <button value="submit" id="kayit-buton">Başlayın
+            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </button>
+
+    </div>
+    <hr id="hr1" style="border: 4px solid rgb(46, 44, 44);">
+    <!-- LİNE-1 -->
+    <div id="line-1" class="line">
+        <h1>Televizyonunuzda izleyin</h1>
+        <img src="/resim/tv.png" alt="">
+        <iframe src="https://giphy.com/embed/kGRTXZwOCuN1VAzz9z" id="iframee" width="405" height="205" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>        <h5>Akıllı TV, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray oynatıcılar ve daha fazlasında seyredin.</h5>
+    </div>
+    <hr style="border: 4px solid rgb(46, 44, 44);">
+
+    <!-- LİNE-2 -->
+    <div id="line-2" class="line">
+        <img src="/resim/mobile.jpg">
+        <h1>Çevrimdışı izlemek için içerikleri indirin</h1>
+        <h5>En sevdiğiniz içerikleri kolayca kaydedin ve her zaman izleyecek bir şeyleriniz olsun.</h5>
+    </div>
+    <hr style="border: 4px solid rgb(46, 44, 44);">
+
+ <!-- LİNE-3 -->
+    <div id="line-3" class="line">
+        <h1>İstediğiniz her yerde izleyin</h1>
+        <h5>Telefonda, tablette, bilgisayarda, televizyonda sınırsız film ve dizi izleyin.</h5>
+        <img src="/resim/device-pile.png" alt="">
+    </div>
+ <hr style="border: 4px solid rgb(46, 44, 44);">
+
+  <!-- LİNE-4 -->
+  <div id="line-4" class="line">
+    <img src="/resim/cocuk.png" alt="" srcset="">
+    <h1>Çocuklarınız için profiller oluşturun</h1>
+    <h5>Üyeliğinize dâhil olan bu ücretsiz deneyim sayesinde çocuklarınız, sadece onlara özel bir alanda en sevdikleri karakterlerle maceralara atılabilir.</h5>
+  </div>
+  <hr style="border: 4px solid rgb(46, 44, 44);">
+
+
+  <!-- İLETİŞİM & SORULAR-->
+
+  <div class="iletisim">
+    <h1>Sıkça Sorulan Sorular</h1>
+
+    <div class="sorular-content">
+        <div class="sorular" onclick="toggleCevap(this)">
+            <p>Netflix nedir?</p>
+            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+        </div>
+            <div class="sorular-alt">
+                <p class="sorular-alt-p">Netflix; internet bağlantılı binlerce cihazda ödüllü diziler, filmler, animeler, belgeseller ve daha fazlasını içeren geniş bir arşiv sunan bir streaming hizmetidir. <br><br>
+                    Tek bir reklam olmadan, istediğiniz kadar, istediğiniz zaman izleyebilirsiniz - hepsi aylık düşük bir ücret karşılığında. Her zaman keşfedilecek yeni bir şeyler var, üstelik her hafta yeni diziler ve filmler ekleniyor!</p>
+            </div>
+        <div class="sorular" onclick="toggleCevap(this)">
+            <p>Netflix'in maliyeti nedir?</p>
+            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+        </div>
+            <div class="sorular-alt">
+                <p class="sorular-alt-p">Netflix'i akıllı telefonunuz, tabletiniz, Akıllı TV'niz, dizüstü bilgisayarınız veya yayın cihazınızda sabit bir aylık ücretle izleyin. Aylık plan ücretleri 229,99 TL ile 119,99 TL arasında değişmektedir. Ekstra maliyet yok, sözleşme yok.</p>
+            </div>
+        <div class="sorular" onclick="toggleCevap(this)">
+            <p>Nerede izleyebilirim?</p>
+            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+        </div>
+            <div class="sorular-alt">
+                <p class="sorular-alt-p">İstediğiniz yerde, istediğiniz zaman izleyin. Bilgisayarınızda netflix.com adresinden veya akıllı TV'ler, akıllı telefonlar, tabletler, medya oynatıcılar ve oyun konsolları dahil Netflix uygulamasını sunan, internet bağlantılı herhangi bir cihazda anında izlemek için Netflix hesabınızla oturum açın. <br><br>
+                </p>
+            </div>
+        <div class="sorular" onclick="toggleCevap(this)">
+            <p>Nasıl iptal ederim?</p>
+            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+        </div>
+            <div class="sorular-alt">
+                <p class="sorular-alt-p">Netflix esnektir. Sinir bozucu hiçbir sözleşme ve taahhüt yoktur. Hesabınızı çevrimiçi olarak iki tıklamayla kolayca iptal edebilirsiniz. İptal ücreti yoktur - hesabınızı istediğiniz zaman başlatın veya durdurun.</p>
+            </div>
+        <div class="sorular" onclick="toggleCevap(this)">
+            <p>Netflix'te ne izleyebilirim?</p>
+            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+        </div>
+            <div class="sorular-alt">
+                <p class="sorular-alt-p">Netflix, uzun metrajlı filmler, belgeseller, diziler ve programlar, anime, ödüllü Netflix orijinal içerikleri ve daha fazlasından oluşan kapsamlı bir kütüphaneye sahiptir. İstediğiniz her zaman, istediğiniz kadar çok şey izleyin.</p>
+            </div>
+        <div class="sorular" onclick="toggleCevap(this)">
+            <p>Netflix çocuklar için uygun mudur?</p>
+            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+        </div>
+            <div class="sorular-alt">
+                <p class="sorular-alt-p">Üyeliğinize dâhil olan Netflix Çocuk deneyimi, çocukların ailece izlenebilecek dizi ve filmleri kendilerine özel bir alanda izlemelerini sağlarken kontrolü ebeveynlere verir. <br><br>
+                    Çocuk profillerinde bulunan PIN korumalı ebeveyn kontrolleri sayesinde, çocukların izleyebileceği içeriklerin yetişkinlik düzeylerini kısıtlayabilir ve onların görmesini istemediğiniz belirli içerikleri engelleyebilirsiniz.</p>
+            </div>
+
+            <p id="iletisim-p">İzlemeye hazır mısınız? Üye olmak ya da hesabınıza tekrar ulaşmak için tek yapmanız gereken e-posta adresinizi girmek.</p>
+
+        <input type="text" id="kayit-input2" placeholder="E-posta adresi">
+        <button value="submit" id="kayit-buton2">Başlayın
+            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </button>
+            </div>
+    </div>
+    <hr style="border: 4px solid rgb(46, 44, 44);">
+
+
+
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>

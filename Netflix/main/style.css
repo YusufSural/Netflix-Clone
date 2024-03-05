@@ -1,0 +1,860 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+body, html {
+    height: 100%;
+    /* overflow: hidden; */
+  }
+:root{
+    --genislik : 520px;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    
+}
+.siyah-arkaplan {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+  
+.siyah-arkaplan::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    z-index: 1;
+}
+#karartma {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+.top{
+    width: 100%;
+    z-index: 3;
+    position: absolute;
+    top: 2%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.netflix{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    font-size: 40px; 
+    font-weight: bold; 
+    color: red;
+    letter-spacing: 2px; 
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: 170px;
+
+}
+#login{
+    color: white;
+    background-color: rgb(225, 20, 20);
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-right: 100px;
+}
+#language{
+    background-color: transparent;
+    color: white;
+    padding: 6px 12px;
+    margin-left: 660px;
+    margin-right: 12px;
+    border-radius: 5px;
+    width: 120px;
+}
+#language:focus{
+    outline: none;
+}
+#login:hover{
+    background-color: rgb(214, 29, 29);
+}
+#language,#login{
+    font-size: 16px;
+
+}
+.content{
+    position: absolute;
+    left: 50%;
+  transform: translate(-50%);
+  width: 800px;
+  top: 43%;
+  color: white;
+  font-weight: 600;
+  font-size: 46px;
+  z-index: 4;
+}
+.content-h1{
+   width: 800px;
+    top: 43%;
+    color: white;
+    font-weight: 600;
+    font-size: 46px;
+    z-index: 4;
+    text-shadow: 1px 1px 100px white, 
+    0 0 25px black, 
+    0 0 5px rgb(255, 255, 255);
+}
+.content h4{
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow:0px 0px 100px white;
+}
+.content h5{
+    margin-left: -70px;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 1000px;
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: center;
+    text-shadow:0px 0px 100px white;
+}
+#kayit-input{
+    margin-left: 50%;
+    transform: translate(-75%);
+    width: 440px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: rgba(64, 64, 134, 0.247);
+    border: 1px solid rgba(255, 255, 255, 0.454);
+    outline: none;
+    color: white;
+    font-size: 14px;
+}
+#kayit-input:focus{
+    border: 1px solid green;
+}
+#kayit-buton{
+    position: absolute;
+    background-color: red;
+    padding: 12px 28px;
+    border: none;
+    font-size: 30px;
+    border-radius: 4px;
+    color: white;
+    margin-left: 519px;
+    margin-top: -58px;
+    cursor: pointer;
+}
+#kayit-buton:hover{
+    background-color: rgb(213, 24, 24);
+}
+#kayit-buton i{
+    font-size: 22px;
+    margin-left: 10px;
+}
+#line-1{
+    width:100%;
+    height:var(--genislik);
+    background-color: #000;
+}
+#line-2{
+    width:100%;
+    height:var(--genislik);
+    background-color: #000;
+}
+#line-3{
+    width:100%;
+    height:var(--genislik);
+    background-color: #000;
+}
+#line-4{
+    width:100%;
+    height:var(--genislik);
+    background-color: #000;
+}
+#line-1 h1{
+    position: absolute;
+    width: 300px; 
+    color: white;
+    font-size: 52px;
+    margin-left: 190px;
+    margin-top: 120px;
+    font-family: "PT Sans", sans-serif;
+}
+#line-1 img{
+   margin-left: 800px;
+    margin-top: 60px;
+    width: 520px;
+    height: 400px;
+}
+#line-1 h5{
+    width: 540px; 
+    color: white;
+    font-size: 28px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 190px;
+    margin-top: -180px;
+}
+iframe{
+   position: absolute;
+    margin-left: -464px;
+    margin-top: 147px;
+}
+#line-2 img{
+    height: 380px;
+    width: 500px;
+    margin-left: 190px;
+    margin-top: 40px;
+}
+#line-2 h1{
+    position: absolute;
+    width: 490px; 
+    color: white;
+    font-size: 52px;
+    margin-left: 730px;
+    margin-top: -300px;
+    font-family: "PT Sans", sans-serif;
+}
+#line-2 h5{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 28px;
+    width: 550px; 
+    margin-left: 730px;
+    margin-top: -130px;
+}
+#line-3 h1{
+    position: absolute;
+    width: 490px; 
+    color: white;
+    font-size: 52px;
+    margin-left: 190px;
+    margin-top: 120px;
+    font-family: "PT Sans", sans-serif;
+}
+#line-3 h5{
+    position: absolute;
+    width: 540px; 
+    color: white;
+    font-size: 28px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 190px;
+    margin-top: 290px;
+}
+#line-3 img{
+    width: 520px;
+    height: 400px;
+    margin-left: 800px;
+    margin-top: 60px;
+}
+#line-4 img{
+    width: 520px;
+    height: 400px;
+    margin-left: 140px;
+    margin-top: 55px;
+}
+#line-4  h1{
+    position: absolute;
+    width: 490px; 
+    color: white;
+    font-size: 53px;
+    margin-left: 760px;
+    margin-top: -340px;
+    font-family: "PT Sans", sans-serif;
+}
+#line-4  h5{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 28px;
+    width: 550px; 
+    margin-left: 760px;
+    margin-top: -180px;
+}
+.iletisim{
+    width: 100%;
+    background: #000;
+    height: 200%;
+    position: absolute;
+}
+.iletisim h1{
+    position: absolute;
+    color: white;
+    font-size: 44px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 60px;
+}
+.iletisim .sorular{
+    cursor: pointer;
+    margin-top: 10px;
+    width: 84%;
+    height: 90px;
+    background-color: rgba(83, 79, 79, 0.583);
+}
+.iletisim .sorular-content{
+    margin-top: 150px;
+    margin-left: 170px;
+}
+.sorular-content{
+    color: white;
+    font-size: 24px;
+}
+.sorular-content .sorular{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.sorular:hover{
+    background-color: rgba(178, 166, 166, 0.412);
+}
+.sorular-content .sorular p{
+    margin-left: 32px;
+}
+.sorular-content .sorular i{
+    font-size: 36px;
+    margin-right: 50px;
+}
+.sorular-alt{
+    margin-top: 2px;
+    width: 84%;
+    background-color: rgba(83, 79, 79, 0.583);
+    display: none;
+}
+.sorular-alt-p{
+    padding: 25px;
+  margin-left: 8px;
+}
+#kayit-input2{
+    margin-left: 50%;
+    transform: translate(-95%);
+    width: 440px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: rgba(64, 64, 134, 0.247);
+    border: 1px solid rgba(255, 255, 255, 0.454);
+    outline: none;
+    color: white;
+    font-size: 14px;
+}
+#kayit-buton2{
+    position: absolute;
+    background-color: red;
+    padding: 12px 27px;
+    border: none;
+    font-size: 30px;
+    border-radius: 4px;
+    color: white;
+    margin-left: -29.5%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#kayit-buton2:hover{
+    background-color: rgb(213, 24, 24);
+}
+#iletisim-p{
+    width: 940px; font-size: 20px; text-align: center;
+            margin-left: 30px; margin-top: 60px;
+}
+
+/*! responsive start */
+
+@media (max-width: 991px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    body, html {
+        width: 100%;
+        height: 100%;
+        /* overflow: hidden; */
+      }
+    #karartma {
+        width: 100%;
+        height: 100vh;
+        z-index: 2;
+    }
+    .netflix{
+        font-size: 30px;
+        margin-right: -400px;
+    }
+    .content{
+        position: absolute;
+        left: 50%;
+      transform: translate(-50%);
+      width: 800px;
+      top: 43%;
+      color: white;
+      font-weight: 600;
+      font-size: 46px;
+      z-index: 4;
+    }
+    .content-h1{
+       width: 800px;
+        top: 43%;
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        font-size: 34px;
+        z-index: 4;
+        text-shadow: 1px 1px 100px white, 
+        0 0 25px black, 
+        0 0 5px rgb(255, 255, 255);
+    }
+    .content h4{
+        font-size: 18px;
+        margin-top: 20px;
+        text-align: center;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-shadow:0px 0px 100px white;
+    }
+    .content h5{
+        margin-left: -54px;
+        font-family:Arial, Helvetica, sans-serif;
+        width: 900px;
+        font-size: 15px;
+        margin-top: 15px;
+        text-align: center;
+        text-shadow:0px 0px 100px white;
+    }
+
+    #kayit-input{
+        margin-left: 50%;
+        transform: translate(-76%);
+        width: 330px;
+        height: 34px;
+        border-radius: 5px;
+        margin-top: 20px;
+        background-color: rgba(64, 64, 134, 0.247);
+        border: 1px solid rgba(255, 255, 255, 0.454);
+        outline: none;
+        color: white;
+        font-size: 14px;
+    }
+    #kayit-buton{
+        position: absolute;
+        background-color: red;
+        padding: 8px 10px;
+        border: none;
+        font-size: 20px;
+        border-radius: 4px;
+        color: white;
+        margin-left: -244px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    #line-1{
+        width:100%;
+        height:420px;
+        background-color: #000;
+    }
+    #line-2{
+        width:100%;
+        height:420px;
+        background-color: #000;
+    }
+    #line-3{
+        width:100%;
+        height:420px;
+        background-color: #000;
+    }
+    #line-4{
+        width:100%;
+        height:420px;
+        background-color: #000;
+    }
+
+    #line-1 h1{
+        position: absolute;
+        width: 300px; 
+        color: white;
+        font-size: 34px;
+        margin-left: 100px;
+        margin-top: 108px;
+        font-family: "PT Sans", sans-serif;
+    }
+    #line-1 img{
+       margin-left: 640px;
+        margin-top: 0px;
+        width: 300px;
+        height: 220px;
+    }
+    #line-1 h5{
+        width: 540px; 
+        color: white;
+        font-size: 18px;
+        font-family: "PT Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+    iframe{
+       position: absolute;
+        margin-left: -255px;
+        margin-top: 2px;
+        width: 208px;
+        height: 208px;
+    }
+    #line-2 img{
+        width: 400px;
+        height: 320px;
+        margin-left: 120px;
+        margin-top: 10px;
+    }
+    #line-2 h1{
+        position: absolute;
+        width: 460px; 
+        color: white;
+        font-size: 34px;
+        margin-left: 540px;
+        margin-top: -220px;
+        font-family: "PT Sans", sans-serif;
+    }
+    #line-2 h5{
+        font-family: "PT Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        font-size: 19px;
+        width: 420px; 
+        margin-left: 540px;
+        margin-top: -100px;
+    }
+    #line-3 h1{
+        position: absolute;
+        width: 490px; 
+        color: white;
+        font-size: 34px;
+        margin-left: 100px;
+        margin-top: 108px;
+        font-family: "PT Sans", sans-serif;
+    }
+    #line-3 h5{
+        position: absolute;
+        width: 440px; 
+        color: white;
+        font-size: 19px;
+        font-family: "PT Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 100px;
+        margin-top: 200px;
+    }
+    #line-3 img{
+        width: 380px;
+        height: 300px;
+        margin-left: 560px;
+        margin-top: 60px;
+    }
+    #line-4 img{
+        width: 360px;
+        height: 280px;
+        margin-left: 120px;
+        margin-top: 55px;
+    }
+    #line-4  h1{
+        position: absolute;
+        width: 490px; 
+        color: white;
+        font-size: 34px;
+        margin-left: 540px;
+        margin-top: -260px;
+        font-family: "PT Sans", sans-serif;
+    }
+    #line-4  h5{
+        font-family: "PT Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        font-size: 20px;
+        width: 400px; 
+        margin-left: 540px;
+        margin-top: -120px;
+    }
+    #kayit-input2{
+        margin-left: 44%;
+        transform: translate(-95%);
+        width: 350px;
+        padding: 16px;
+        border-radius: 5px;
+        margin-top: 20px;
+        background-color: rgba(64, 64, 134, 0.247);
+        border: 1px solid rgba(255, 255, 255, 0.454);
+        outline: none;
+        color: white;
+        font-size: 14px;
+    }
+    #kayit-buton2{
+        position: absolute;
+        background-color: red;
+        padding: 8px 22px;
+        border: none;
+        font-size: 28px;
+        border-radius: 4px;
+        color: white;
+        margin-left: -33.5%;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    .iletisim{
+        width: 100%;
+        background: #000;
+        height: 226%;
+        position: absolute;
+    }
+    #iletisim-p{
+        position: absolute;
+        width: 780px; 
+        font-size: 18px;
+       
+        margin-left:-60px; 
+        margin-top: 140px;
+    }
+
+
+    /*! 730PX */
+
+
+    @media (max-width: 730px){
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+            /* overflow: hidden; */
+          }
+        #karartma {
+            width: 100%;
+            height: 100vh;
+            z-index: 2;
+        }
+        .netflix{
+            font-size: 22px;
+            margin-right: -600px;
+            margin-left: 140px;
+        }
+        .content{
+            position: absolute;
+            left: 50%;
+          transform: translate(-50%);
+          width: 800px;
+          top: 43%;
+          color: white;
+          font-weight: 600;
+          font-size: 46px;
+          z-index: 4;
+        }
+        .content-h1{
+           width: 900px;
+            margin-left: -54px;
+            text-align: center;
+            color: white;
+            font-weight: 600;
+            font-size: 26px;
+            z-index: 4;
+            text-shadow: 1px 1px 100px white, 
+            0 0 25px black, 
+            0 0 5px rgb(255, 255, 255);
+        }
+        .content h4{
+           display: none;
+        }
+        .content h5{
+            margin-left: 100px;
+            font-family:Arial, Helvetica, sans-serif;
+            width: 600px;
+            font-size: 15px;
+            margin-top: 15px;
+            text-align: center;
+            text-shadow:0px 0px 100px white;
+        }
+
+        #line-1{
+            width:100%;
+            height:560px;
+            background-color: #000;
+        }
+        #line-2{
+            width:100%;
+            height:560px;
+            background-color: #000;
+        }
+        #line-3{
+            width:100%;
+            height:560px;
+            background-color: #000;
+        }
+        #line-4{
+           display: none;
+        }
+    
+        #line-1 h1{
+            position: absolute;
+            width: 400px; 
+            color: white;
+            font-size: 34px;
+            margin-left: 190px;
+            margin-top: 70px;
+            font-family: "PT Sans", sans-serif;
+        }
+        #line-1 img{
+           margin-left: 220px;
+            margin-top: 270px;
+            width: 300px;
+            height: 220px;
+        }
+        #line-1 h5{
+            width: 720px; 
+            color: white;
+            font-size: 16px;
+            font-family: "PT Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin-left: 30px;
+            margin-top: -320px;
+        }
+        iframe{
+           position: absolute;
+            margin-left: -255px;
+            margin-top: 270px;
+            width: 208px;
+            height: 208px;
+        }
+        #line-2 img{
+            width: 400px;
+            height: 320px;
+            margin-left: 10px;
+            margin-top: 70px;
+        }
+        #line-2 h1{
+            position: absolute;
+            width: 460px; 
+            color: white;
+            font-size: 34px;
+            margin-left: 345px;
+            margin-top: -280px;
+            font-family: "PT Sans", sans-serif;
+        }
+        #line-2 h5{
+            font-family: "PT Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: white;
+            font-size: 19px;
+            width: 340px; 
+            margin-left: 345px;
+            margin-top: -120px;
+        }
+        #line-3 h1{
+            position: absolute;
+            width: 490px; 
+            color: white;
+            font-size: 34px;
+            margin-left: 170px;
+            margin-top: 70px;
+            font-family: "PT Sans", sans-serif;
+        }
+        #line-3 h5{
+            position: absolute;
+            width: 600px; 
+            color: white;
+            font-size: 19px;
+            font-family: "PT Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin-left: 80px;
+            margin-top: 160px;
+        }
+        #line-3 img{
+            width: 380px;
+            height: 300px;
+            margin-left: 180px;
+            margin-top: 240px;
+        }
+        #kayit-input2{
+            margin-left: 44%;
+            transform: translate(-80%);
+            width: 350px;
+            padding: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+            background-color: rgba(64, 64, 134, 0.247);
+            border: 1px solid rgba(255, 255, 255, 0.454);
+            outline: none;
+            color: white;
+            font-size: 14px;
+        }
+        #kayit-buton2{
+            position: absolute;
+            background-color: red;
+            padding: 8px 22px;
+            border: none;
+            font-size: 28px;
+            border-radius: 4px;
+            color: white;
+            margin-left: -38%;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .iletisim{
+            width: 100%;
+            background: #000;
+            height: 226%;
+            position: absolute;
+        }
+        .iletisim h1{
+            position: absolute;
+            color: white;
+            width: 400px;
+            font-size: 38px;
+            margin-left: 50%;
+            transform: translate(-50%);
+            margin-top: 60px;
+        }
+        .iletisim .sorular{
+            cursor: pointer;
+            margin-top: 10px;
+            width: 96%;
+            height: 90px;
+            background-color: rgba(83, 79, 79, 0.583);
+        }
+        #iletisim-p{
+            position: absolute;
+            width: 660px; 
+            font-size: 16px;
+            margin-left:-10px; 
+            margin-top: 140px;
+        }
+        .iletisim .sorular-content{
+            margin-top: 150px;
+            margin-left: 40px;
+        }
+
+}
+
+}
